@@ -2,9 +2,15 @@
 
 > 汎用シリアルバス RC サーボドライバ・ライブラリ
 
+---
+
 ## gs2d とは
 
 gs2d は、市販のシリアルバス RC サーボ(通称:シリアルサーボ)を同一のメソッドでプロトコルに依存せずに動かすことを目的に開発したライブラリです。
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/15685007/91127979-4900ad80-e6e2-11ea-9a9e-46ebdad67757.png" alt="gs2d concept" width="80%">
+</div>
 
 2020 年 8 月現在、サポートする言語は Python、C#、C++ の 3 種。各言語のリポジトリは下記で管理しています。
 
@@ -20,28 +26,32 @@ gs2d でサポートするメーカ/規格は表 2 のとおりです。対応/�
 
 > 表 2 サポートするメーカ/規格
 
-| Manufacturer                          | Series                      | Protocol                             |
-| ------------------------------------- | --------------------------- | ------------------------------------ |
-| ロボティズ (ROBOTIS Inc.)             | Dynamixel X Series          | Protocol 2.0                         |
-| 近藤科学 (KONDOKondo Kagaku Co.,Ltd.) | B3M Serises <br> KRS Series | B3M protocol <br> ICS3.6 <br> ICS3.5 |
-| 双葉電子工業 (FUTABA Corp.)           | Command Type Servo          | Command Type Protocol                |
+| Manufacturer                     | Series                      | Protocol                             |
+| -------------------------------- | --------------------------- | ------------------------------------ |
+| ロボティズ (ROBOTIS Inc.)        | Dynamixel X Series          | Protocol 2.0                         |
+| 近藤科学 (Kondo Kagaku Co.,Ltd.) | B3M Serises <br> KRS Series | B3M protocol <br> ICS3.6 <br> ICS3.5 |
+| 双葉電子工業 (FUTABA Corp.)      | Command Type Servo          | Command Type Protocol                |
 
-また、gs2d に適合するシリアルサーボ・ドライバ製品、ならびにその要件については下記のリポジトリに情報をまとめています。あわせてご確認ください。
+また、gs2d に適合するシリアルサーボ・ドライバ製品、ならびにその要件については下記のリポジトリに情報をまとめています。
 
 > 表 3 gs2d 適合ハードウェアに関するリポジトリ
 
-| Name        | Repository                                         |
-| ----------- | -------------------------------------------------- |
-| gs2d-hw    | <https://github.com/karakuri-products/gs2d-hw>    |
+| Name    | Repository                                     |
+| ------- | ---------------------------------------------- |
+| gs2d-hw | <https://github.com/karakuri-products/gs2d-hw> |
+
+---
 
 ## 基本仕様
 
 gs2d の基本仕様は以下のとおりです。いずれの言語の実装もこれらを満たします。
 
-> - 送信コマンドによるループバックは無視。
+> - 送信コマンドによるループバックの処理は考慮せず、非対応。
 > - 回転角度の単位は deg 、回転方向は CCW を正、CW を負。
 >   分解能は各社仕様にあわせて gs2d 側で吸収。
 > - メーカ間で共通化不可能な機能についてはメモリ操作メソッドで対応。
+
+---
 
 ## 今後の開発予定
 
@@ -54,6 +64,8 @@ gs2d の基本仕様は以下のとおりです。いずれの言語の実装も
 | 小西模型 (Konishi Mokei Co.,Ltd.) | JR PROPO XBUS Series         | XBUS Protocol v1.1.0 |
 | ヴイストン (Vstone Co.,Ltd.)      | Vservo series (Discontinued) | Vservo Protocol      |
 
+---
+
 ## ライセンス
 
-gs2d は Apache License 2.0 で利用いただけます。詳細は ./LICENSE を参照のこと。
+gs2d は Apache License 2.0 とします。詳細は ./LICENSE を参照のこと。
