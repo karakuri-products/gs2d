@@ -9,7 +9,7 @@
 gs2d は、市販のシリアルバス RC サーボ(通称:シリアルサーボ)を同一のメソッドでプロトコルに依存せずに動かすことを目的に開発したライブラリです。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/91373868-66ed2000-e852-11ea-97b7-d83172c82824.png" alt="gs2d concept" width="80%">
+    <img src="https://user-images.githubusercontent.com/15685007/91433522-5d89a500-e89e-11ea-97d4-98f8b8fe0b4c.png" alt="gs2d concept" width="80%">
 </div>
 
 > 図 1 gs2d コンセプト図
@@ -50,10 +50,16 @@ gs2d の基本仕様は以下のとおりです。いずれの言語の実装も
 
 > - 半二重通信のみ対応。
 > - 送信コマンドによるループバックの処理は考慮せず、非対応。
-> - 回転角度の単位は deg 、回転方向は CCW を正(+)、CW を負(-)、センターを 0。
->   分解能は各社仕様にあわせて gs2d 側で吸収。
+> - 回転角度の単位は deg 、回転方向は CCW を正(+)、CW を負(-)、センターを 0。（図2）
+>   分解能・値域は各社製品の仕様にあわせて gs2d 側で吸収。
 > - メーカ/規格間で共通でない機能(電流制御モード 等)については、
 >   メモリ操作メソッドで個別に対応。
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/15685007/91436765-b7409e00-e8a3-11ea-88cd-1b459a14bc2c.png" alt="gs2d config" width="30%">
+</div>
+
+> 図 2 回転方向の定義
 
 ---
 
@@ -76,7 +82,7 @@ gs2d の基本仕様は以下のとおりです。いずれの言語の実装も
     <img src="https://user-images.githubusercontent.com/15685007/91433150-c886ac00-e89d-11ea-9695-45ce390ce97e.png" alt="gs2d concept" width="15%">
 </div>
 
-> 図 2 gs2d ロゴ
+> 図 3 gs2d ロゴ
 
 ---
 
