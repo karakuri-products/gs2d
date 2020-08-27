@@ -9,7 +9,7 @@
 gs2d は、市販のシリアルバス RC サーボ(通称:シリアルサーボ)を同一のメソッドでプロトコルに依存せずに動かすことを目的に開発したライブラリです。
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/15685007/91130440-9c74fa80-e6e6-11ea-8264-9379fe96ffc5.png" alt="gs2d concept" width="80%">
+    <img src="https://user-images.githubusercontent.com/15685007/91373868-66ed2000-e852-11ea-97b7-d83172c82824.png" alt="gs2d concept" width="80%">
 </div>
 
 > 図 1 gs2d コンセプト図
@@ -34,7 +34,7 @@ gs2d でサポートするメーカ/規格は表 2 のとおりです。対応/�
 | 近藤科学 (Kondo Kagaku Co.,Ltd.) | B3M Serises <br> KRS Series | B3M protocol <br> ICS3.6 <br> ICS3.5 |
 | 双葉電子工業 (FUTABA Corp.)      | Command Type Servo          | Command Type Protocol                |
 
-また、gs2d に適合するシリアルサーボ・ドライバ製品、ならびにその要件については下記のリポジトリに情報をまとめています。
+また、gs2d に対応するシリアルサーボ・ドライバ製品、ならびにその要件については下記のリポジトリに情報をまとめています。
 
 > 表 3 gs2d 適合ハードウェアに関するリポジトリ
 
@@ -67,6 +67,16 @@ gs2d の基本仕様は以下のとおりです。いずれの言語の実装も
 | :-------------------------------- | ---------------------------- | -------------------- |
 | 小西模型 (Konishi Mokei Co.,Ltd.) | JR PROPO XBUS Series         | XBUS Protocol v1.1.0 |
 | ヴイストン (Vstone Co.,Ltd.)      | Vservo series (Discontinued) | Vservo Protocol      |
+
+---
+
+## ロゴ
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/15685007/91433150-c886ac00-e89d-11ea-9695-45ce390ce97e.png" alt="gs2d concept" width="15%">
+</div>
+
+> 図 2 gs2d ロゴ
 
 ---
 
