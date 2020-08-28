@@ -18,11 +18,11 @@ gs2d は、市販のシリアルバス RC サーボ(通称:シリアルサーボ
 
 > 表 1 サポートする言語、および各リポジトリ
 
-|        | Name        | Repository                                         |
-| ------ | ----------- | -------------------------------------------------- |
-| C++    | gs2d-cpp    | <https://github.com/karakuri-products/gs2d-cpp>    |
-| C#     | gs2d-csharp | <https://github.com/karakuri-products/gs2d-csharp> |
-| python | gs2d-python | <https://github.com/karakuri-products/gs2d-python> |
+|        | Name        | Repository                                                        |
+| ------ | ----------- | ----------------------------------------------------------------- |
+| C++    | gs2d-cpp    | <https://github.com/karakuri-products/gs2d-cpp> (後日公開予定)    |
+| C#     | gs2d-csharp | <https://github.com/karakuri-products/gs2d-csharp> (後日公開予定) |
+| python | gs2d-python | <https://github.com/karakuri-products/gs2d-python>                |
 
 gs2d でサポートするメーカ/規格は表 2 のとおりです。対応/動作確認が完了しているシリアルサーボの機種は<a href="https://docs.google.com/spreadsheets/d/15XlF4kySq219ICrvgJmQ_NEENOpA3_AKKTeR7gI3orM/edit?usp=sharing" target="_blank">こちら</a>で確認できます。
 
@@ -38,9 +38,9 @@ gs2d でサポートするメーカ/規格は表 2 のとおりです。対応/�
 
 > 表 3 gs2d 適合ハードウェアに関するリポジトリ
 
-| Name    | Repository                                     |
-| ------- | ---------------------------------------------- |
-| gs2d-hw | <https://github.com/karakuri-products/gs2d-hw> |
+| Name          | Repository                                     |
+| ------------- | ---------------------------------------------- |
+| gs2d-hardware | <https://github.com/karakuri-products/gs2d-hw> |
 
 ---
 
