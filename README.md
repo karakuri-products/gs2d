@@ -38,9 +38,9 @@ gs2d でサポートするメーカ/規格は表 2 のとおりです。対応/�
 
 > 表 3 gs2d 適合ハードウェアに関するリポジトリ
 
-| Name          | Repository                                     |
-| ------------- | ---------------------------------------------- |
-| gs2d-hardware | <https://github.com/karakuri-products/gs2d-hw> |
+| Name          | Repository                                           |
+| ------------- | ---------------------------------------------------- |
+| gs2d-hardware | <https://github.com/karakuri-products/gs2d-hardware> |
 
 ---
 
