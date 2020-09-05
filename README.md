@@ -115,7 +115,7 @@ gs2d で提供する API は以下のとおりです。実装の詳細につい�
 | --------------------------------- | ---------------------------- | -------------------- | -------- |
 | 小西模型 (Konishi Mokei Co.,Ltd.) | JR PROPO XBUS Series         | XBUS Protocol v1.1.0 | 対応予定 |
 | ヴイストン (Vstone Co.,Ltd.)      | Vservo series (Discontinued) | Vservo Protocol      | 未定     |
-
+| アダマンド並木精密宝石株式会社 (Adamant Namiki Precision Jewel Co., Ltd.)      | Micro Robot Servo | Micro Robot Servo Protocol     | 未定     |
 ---
 
 ## ロゴ
