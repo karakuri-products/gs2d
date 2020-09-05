@@ -65,7 +65,7 @@ gs2d の基本仕様は以下のとおりです。いずれの言語の実装も
 
 gs2d で提供する API は以下のとおりです。実装の詳細については各言語のリポジトリ(表 1)を参照ください。
 
-> 表 4 gs2d で提供する API 一覧
+> 表 4 gs2d で提供する API 一覧<br>
 > **_○ : supported_**, **_x : not supported_**
 
 | API Name             | Note                                                         | Write | Read |
