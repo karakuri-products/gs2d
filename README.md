@@ -109,12 +109,12 @@ gs2d で提供する API は以下のとおりです。実装の詳細につい�
 
 以下に示すメーカ/規格については対応を検討中です。
 
-> 表 4 対応検討中のメーカ/規格
+> 表 5 対応検討中のメーカ/規格
 
-| Manufacturer                      | Series                       | Protocol             |
-| --------------------------------- | ---------------------------- | -------------------- |
-| 小西模型 (Konishi Mokei Co.,Ltd.) | JR PROPO XBUS Series         | XBUS Protocol v1.1.0 |
-| ヴイストン (Vstone Co.,Ltd.)      | Vservo series (Discontinued) | Vservo Protocol      |
+| Manufacturer                      | Series                       | Protocol             | Status   |
+| --------------------------------- | ---------------------------- | -------------------- | -------- |
+| 小西模型 (Konishi Mokei Co.,Ltd.) | JR PROPO XBUS Series         | XBUS Protocol v1.1.0 | 対応予定 |
+| ヴイストン (Vstone Co.,Ltd.)      | Vservo series (Discontinued) | Vservo Protocol      | 未定     |
 
 ---
 
