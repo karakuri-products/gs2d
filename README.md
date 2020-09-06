@@ -67,39 +67,40 @@ gs2d で提供する API は以下のとおりです。実装の詳細につい�
 
 > 表 4 gs2d で提供する API 一覧<br> > **_○ : supported_**, **_x : not supported_**
 
-| API Name             | Note                                                               | Write | Read |
-| -------------------- | ------------------------------------------------------------------ | ----- | ---- |
-| write                | 指定する ID,メモリアドレスに指定長のコマンドを書込(メモリ操作 API) | ○     | x    |
-| read                 | 指定する ID,メモリアドレスに指定長のコマンドを読込(メモリ操作 API) | x     | ○    |
-| burstWrite           | 指定するメモリアドレスに指定長のコマンドを一斉書込(メモリ操作 API) | ○     | x    |
-| ping                 | バス上に ping を送出し、サーボの返答を受信                         | x     | ○    |
-| id                   | サーボ ID                                                          | ○     | ○    |
-| baudRate             | 通信ボーレート (※1)                                                | ○     | ○    |
-| torque               | 出力トルクの ON/OFF                                                | ○     | ○    |
-| temperature          | 現在の温度値(※2)                                                   | x     | ○    |
-| current              | 現在の電流値 (※2)                                                  | x     | ○    |
-| voltage              | 印加電圧値                                                         | x     | ○    |
-| targetPosition       | 目標角度値                                                         | ○     | ○    |
-| position             | 現在の角度値                                                       | x     | ○    |
-| burstTargetPositions | 複数のモータに対して目標角度値を一斉指示                           | ○     | x    |
-| pValue               | PID FB, P ゲイン                                                   | ○     | ○    |
-| iValue               | PID FB, I ゲイン                                                   | ○     | ○    |
-| dValue               | PID FB, D ゲイン                                                   | ○     | ○    |
-| offset               | 出力軸の角度指令値に対するオフセット値                             | ○     | ○    |
-| deadband             | 出力軸の角度指令値に対する不感帯の設定                             | ○     | ○    |
-| limitCwPosition      | CW 方向の角度限界の設定値(※2)                                      | ○     | ○    |
-| limitCcwPosition     | CCW 方向の角度限界の設定値(※2)                                     | ○     | ○    |
-| limitTemperature     | 温度の上限設定値(※2)                                               | ○     | ○    |
-| limitCurrent         | 電流の上限設定値(※2)                                               | ○     | ○    |
-| speed                | 出力軸の速度                                                       | ○     | ○    |
-| accelation           | 出力軸の加速度                                                     | ○     | ○    |
-| maxTorque            | 最大出力値                                                         | ○     | ○    |
-| targetTime           | 目標値への到達時間                                                 | ○     | ○    |
-| resetMemory          | メモリーマップの値を初期化（工場出荷時）に戻す                     | ○     | x    |
-| saveRom              | ROM に設定値を保存                                                 | ○     | x    |
+| API Name             | Note                                               | Write | Read |
+| -------------------- | -------------------------------------------------- | ----- | ---- |
+| write                | 指定 ID,メモリアドレスに指定長のコマンドを書込(※1) | ○     | x    |
+| read                 | 指定 ID,メモリアドレスに指定長のコマンドを読込(※1) | x     | ○    |
+| burstWrite           | 指定メモリアドレスに指定長のコマンドを一斉書込(※1) | ○     | x    |
+| ping                 | バス上に ping を送出し、サーボの返答を受信         | x     | ○    |
+| id                   | サーボ ID                                          | ○     | ○    |
+| baudRate             | 通信ボーレート (※2)                                | ○     | ○    |
+| torque               | 出力トルクの ON/OFF                                | ○     | ○    |
+| temperature          | 現在の温度値(※3)                                   | x     | ○    |
+| current              | 現在の電流値 (※3)                                  | x     | ○    |
+| voltage              | 印加電圧値                                         | x     | ○    |
+| targetPosition       | 目標角度値                                         | ○     | ○    |
+| position             | 現在の角度値                                       | x     | ○    |
+| burstTargetPositions | 複数のモータに対して目標角度値を一斉指示           | ○     | x    |
+| pValue               | PID FB, P ゲイン                                   | ○     | ○    |
+| iValue               | PID FB, I ゲイン                                   | ○     | ○    |
+| dValue               | PID FB, D ゲイン                                   | ○     | ○    |
+| offset               | 出力軸の角度指令値に対するオフセット値             | ○     | ○    |
+| deadband             | 出力軸の角度指令値に対する不感帯の設定             | ○     | ○    |
+| limitCwPosition      | CW 方向の角度限界の設定値(※3)                      | ○     | ○    |
+| limitCcwPosition     | CCW 方向の角度限界の設定値(※3)                     | ○     | ○    |
+| limitTemperature     | 温度の上限設定値(※3)                               | ○     | ○    |
+| limitCurrent         | 電流の上限設定値(※2)                               | ○     | ○    |
+| speed                | 出力軸の速度                                       | ○     | ○    |
+| accelation           | 出力軸の加速度                                     | ○     | ○    |
+| maxTorque            | 最大出力値                                         | ○     | ○    |
+| targetTime           | 目標値への到達時間                                 | ○     | ○    |
+| resetMemory          | メモリーマップの値を初期化（工場出荷時）に戻す     | ○     | x    |
+| saveRom              | ROM に設定値を保存                                 | ○     | x    |
 
-> (※1) 値を直接指定。リストにない値が与えられた場合はエラーを返す。<br>
-> (※2) 図 2 に基づいた仕様で運用。gs2d 側で各社仕様にあわせて変換。<br>
+> (※1) メモリ操作 API。<br>
+> (※2) 値を直接指定。リストにない値が与えられた場合はエラーを返す。<br>
+> (※3) 図 2 に基づいた仕様で運用。gs2d 側で各社仕様にあわせて変換。<br>
 
 ---
 
